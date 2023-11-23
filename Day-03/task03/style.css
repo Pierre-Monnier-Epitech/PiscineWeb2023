@@ -1,0 +1,74 @@
+
+body {
+    padding: 10px;
+    height: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    background-color: #67B3DD;
+    height: 50px;
+}
+
+@media screen and (min-width: 768px), screen and (min-width: 1024px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+section {
+    margin: 10px 0;
+}
+
+
+@media screen and (min-width: 768px), screen and (min-width: 1024px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+}
+
+.section1 {
+    background-color: #9EE062;
+    height: 150px; 
+}
+
+.article  {
+    height: 115px; 
+    margin: 5px 0 ;
+}
+
+.yellow {
+    background-color: #FEDF6B;
+    height: 115px; 
+    margin: 5px 0 ;
+}
+
+.purple {
+    background-color: #6B2683;
+    height: 115px; 
+    margin: 5px 0 ;
+}
+
+.pink {
+    background-color: #F03DB5;
+    height: 115px; 
+    margin: 5px 0 ;
+}
+
+footer {
+    background-color: #FC302D;
+    height: 50px;
+    position: sticky;
+    bottom:5px;
+
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="p-5">Pays</h1>
+    <button id="btnPays">Load Countries</button>
+    <div class="form-group">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">country-code</th>
+                <th scope="col">name</th>
+              </tr>
+            </thead>
+            <tbody id="bodytable">
+              
+            </tbody>
+          </table>
+    </div>
+</div>
+<script>
+    document.getElementById('btnPays').addEventListener("click" , async => { 
+    fetch("countries.json")
+    .then(response => {
+        if(!response.ok){
+            return('ficher inconnu');
+        } else {
+            return response.json();   
+        }})
+        .then((j) => {   
+            console.log(j)
+            console.log(typeof j)
+            for (const key in j) {
+                    if (j.hasOwnProperty(key)) {
+                        const row = bodytable.insertRow();
+                        const cell1 = row.insertCell(0);
+                        const cell2 = row.insertCell(1);
+
+                        cell1.textContent = key;
+                        cell2.textContent = j[key];
+                    }
+            }
+            });
+
+            
+        })
+       
+</script>
+</body>
+</html>

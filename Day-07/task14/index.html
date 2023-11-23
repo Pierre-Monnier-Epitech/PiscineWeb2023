@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Example</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="textInput">Enter Text:</label>
+        <input type="text" id="textInput" name="textInput" required>
+
+        <label for="selectOption">Select an option:</label>
+        <select id="selectOption" name="selectOption">
+            <option value="note">Note</option>
+            <option value="email">Email</option>
+            <option value="todo">Todo</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <ul id="outputList"></ul>
+
+    <form id="searchForm">
+        <label for="searchType">Search by type:</label>
+        <select id="searchType" name="searchType">
+            <option value="all">All</option>
+            <option value="note">Note</option>
+            <option value="email">Email</option>
+            <option value="todo">Todo</option>
+        </select>
+        
+        <button type="button" onclick="searchItems()">Search</button>
+        <button type="button" onclick="resetSearch()">Reset</button>
+        <br><br>
+        <label for="searchTerm">Recherche :</label>
+        <input type="text" id="searchTerm" name="searchTerm" required>
+        
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

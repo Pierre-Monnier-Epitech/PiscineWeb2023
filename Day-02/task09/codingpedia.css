@@ -1,0 +1,44 @@
+.box {
+  margin:10px;
+  padding: 40px;
+  border: 2px solid;
+  background-color: white;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 5fr 1fr; /
+}
+
+body {
+  background-color: gray;
+}
+
+.flex{
+  display: flex;
+}
+
+
+
+main {
+  width: 80%;
+}
+
+aside {
+  flex:20%  
+}
+
+
+.ensemble {
+  display: grid;
+  grid-template-columns: 3fr 5fr; 
+}
+
+.ensembleRadio {
+  display: grid;
+  grid-template-columns: 6fr 1fr; 
+}
+
+#male {
+  margin-right: auto;
+}

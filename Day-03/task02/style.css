@@ -1,0 +1,71 @@
+@media screen and (max-width: 767px) {
+    html {
+        padding: 5px;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    html {
+        width: 767px;
+    }
+}
+
+
+header {
+    background-color: #67B3DD;
+    height: 50px;
+}
+
+section {
+    margin: 5px 0;
+}
+
+.section1 {
+    background-color: #9EE062;
+    height: 150px; /* Ajout de la hauteur */
+}
+
+.section2, article  {
+    height: 115px; 
+    margin: 5px 0 ;
+}
+
+.section2, article, .yellow {
+    background-color: #FEDF6B;
+    height: 115px; 
+    margin: 5px 0 ;
+}
+
+.section2, article, .purple {
+    background-color: #6B2683;
+    height: 115px; 
+    margin: 5px 0 ;
+}
+
+.section2, article, .pink {
+    background-color: #F03DB5;
+    height: 115px; 
+    margin: 5px 0 ;
+}
+
+footer {
+    background-color: #FC302D;
+    height: 50px;
+    position: fixed;
+    bottom:5px;
+
+}
+
+
+@media screen and (max-width: 767px) {
+    footer {
+        width: calc(100% - 26px);
+    }
+}
+
+@media screen and (min-width: 767px) {
+    footer {
+        width: 751px;
+    }
+}
